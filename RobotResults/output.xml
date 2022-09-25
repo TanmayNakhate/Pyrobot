@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.9 on win32)" generated="20220925 11:36:30.212" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotTest" source="F:\Python_everything\Pyrobot\RobotTest">
+<suite id="s1-s1" name="Calculator" source="F:\Python_everything\Pyrobot\RobotTest\calculator.robot">
+<test id="s1-s1-t1" name="Perform Addition" line="10">
+<kw name="Calculate" library="KeywordImpl">
+<arg>add</arg>
+<arg>${num1}</arg>
+<arg>${num2}</arg>
+<doc>This is where Calculation is performed based on the param</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='add'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}+${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Evaluate" library="BuiltIn">
+<arg>${num1}+${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" starttime="20220925 11:36:30.261" endtime="20220925 11:36:30.261"/>
+</kw>
+<msg timestamp="20220925 11:36:30.261" level="INFO">${ans} = 35</msg>
+<status status="PASS" starttime="20220925 11:36:30.260" endtime="20220925 11:36:30.261"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='sub'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}-${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.262" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.262" endtime="20220925 11:36:30.262"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='mult'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}*${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.262" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.262" endtime="20220925 11:36:30.262"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='div'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}/${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.263" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.263" endtime="20220925 11:36:30.263"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ans}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 11:36:30.263" level="INFO">None</msg>
+<status status="PASS" starttime="20220925 11:36:30.263" endtime="20220925 11:36:30.263"/>
+</kw>
+<status status="PASS" starttime="20220925 11:36:30.259" endtime="20220925 11:36:30.264"/>
+</kw>
+<tag>calculator</tag>
+<status status="PASS" starttime="20220925 11:36:30.258" endtime="20220925 11:36:30.264"/>
+</test>
+<test id="s1-s1-t2" name="Perform Substraction" line="14">
+<kw name="Calculate" library="KeywordImpl">
+<arg>sub</arg>
+<arg>${num1}</arg>
+<arg>${num2}</arg>
+<doc>This is where Calculation is performed based on the param</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='add'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}+${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.268" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.268" endtime="20220925 11:36:30.268"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='sub'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}-${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Evaluate" library="BuiltIn">
+<arg>${num1}-${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" starttime="20220925 11:36:30.269" endtime="20220925 11:36:30.270"/>
+</kw>
+<msg timestamp="20220925 11:36:30.270" level="INFO">${ans} = -11</msg>
+<status status="PASS" starttime="20220925 11:36:30.268" endtime="20220925 11:36:30.270"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='mult'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}*${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.270" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.270" endtime="20220925 11:36:30.271"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='div'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}/${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.271" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.271" endtime="20220925 11:36:30.271"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ans}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 11:36:30.271" level="INFO">None</msg>
+<status status="PASS" starttime="20220925 11:36:30.271" endtime="20220925 11:36:30.271"/>
+</kw>
+<status status="PASS" starttime="20220925 11:36:30.267" endtime="20220925 11:36:30.272"/>
+</kw>
+<tag>calculator</tag>
+<status status="PASS" starttime="20220925 11:36:30.266" endtime="20220925 11:36:30.272"/>
+</test>
+<test id="s1-s1-t3" name="Perform Multiplication" line="18">
+<kw name="Calculate" library="KeywordImpl">
+<arg>mult</arg>
+<arg>${num1}</arg>
+<arg>${num2}</arg>
+<doc>This is where Calculation is performed based on the param</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='add'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}+${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.277" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.276" endtime="20220925 11:36:30.277"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='sub'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}-${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.277" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.277" endtime="20220925 11:36:30.277"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='mult'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}*${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Evaluate" library="BuiltIn">
+<arg>${num1}*${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" starttime="20220925 11:36:30.278" endtime="20220925 11:36:30.278"/>
+</kw>
+<msg timestamp="20220925 11:36:30.278" level="INFO">${ans} = 276</msg>
+<status status="PASS" starttime="20220925 11:36:30.278" endtime="20220925 11:36:30.278"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='div'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}/${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.279" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.279" endtime="20220925 11:36:30.279"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ans}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 11:36:30.279" level="INFO">None</msg>
+<status status="PASS" starttime="20220925 11:36:30.279" endtime="20220925 11:36:30.279"/>
+</kw>
+<status status="PASS" starttime="20220925 11:36:30.275" endtime="20220925 11:36:30.279"/>
+</kw>
+<tag>calculator</tag>
+<status status="PASS" starttime="20220925 11:36:30.275" endtime="20220925 11:36:30.280"/>
+</test>
+<test id="s1-s1-t4" name="Perform Division" line="22">
+<kw name="Calculate" library="KeywordImpl">
+<arg>div</arg>
+<arg>${num1}</arg>
+<arg>${num2}</arg>
+<doc>This is where Calculation is performed based on the param</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='add'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}+${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.286" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.284" endtime="20220925 11:36:30.286"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='sub'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}-${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.287" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.286" endtime="20220925 11:36:30.287"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='mult'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}*${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220925 11:36:30.288" level="INFO">${ans} = None</msg>
+<status status="PASS" starttime="20220925 11:36:30.287" endtime="20220925 11:36:30.288"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${ans}</var>
+<arg>'${param}'=='div'</arg>
+<arg>Evaluate</arg>
+<arg>${num1}/${num2}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Evaluate" library="BuiltIn">
+<arg>${num1}/${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" starttime="20220925 11:36:30.289" endtime="20220925 11:36:30.289"/>
+</kw>
+<msg timestamp="20220925 11:36:30.290" level="INFO">${ans} = 0.5217391304347826</msg>
+<status status="PASS" starttime="20220925 11:36:30.288" endtime="20220925 11:36:30.290"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ans}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 11:36:30.290" level="INFO">0.5217391304347826</msg>
+<status status="PASS" starttime="20220925 11:36:30.290" endtime="20220925 11:36:30.290"/>
+</kw>
+<status status="PASS" starttime="20220925 11:36:30.282" endtime="20220925 11:36:30.290"/>
+</kw>
+<tag>calculator</tag>
+<status status="PASS" starttime="20220925 11:36:30.281" endtime="20220925 11:36:30.291"/>
+</test>
+<doc>This is test program of Robot framework</doc>
+<status status="PASS" starttime="20220925 11:36:30.250" endtime="20220925 11:36:30.293"/>
+</suite>
+<suite id="s1-s2" name="helloWorld" source="F:\Python_everything\Pyrobot\RobotTest\helloWorld.robot">
+<test id="s1-s2-t1" name="Hello World" line="12">
+<kw name="Print Hello World" library="KeywordImpl">
+<arg>${name}</arg>
+<arg>${framework}</arg>
+<doc>Print Message</doc>
+<kw name="Log" library="BuiltIn">
+<arg>Hi ${name} Welcome to ${framework}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 11:36:30.303" level="INFO">Hi CGI Welcome to Tanmay's Framework</msg>
+<status status="PASS" starttime="20220925 11:36:30.303" endtime="20220925 11:36:30.303"/>
+</kw>
+<status status="PASS" starttime="20220925 11:36:30.302" endtime="20220925 11:36:30.303"/>
+</kw>
+<tag>helloworld</tag>
+<status status="PASS" starttime="20220925 11:36:30.301" endtime="20220925 11:36:30.304"/>
+</test>
+<doc>This is test program of Robot framework</doc>
+<status status="PASS" starttime="20220925 11:36:30.295" endtime="20220925 11:36:30.305"/>
+</suite>
+<status status="PASS" starttime="20220925 11:36:30.215" endtime="20220925 11:36:30.308"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">calculator</stat>
+<stat pass="1" fail="0" skip="0">helloworld</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="RobotTest">RobotTest</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Calculator">RobotTest.Calculator</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="helloWorld">RobotTest.helloWorld</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
